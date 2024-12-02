@@ -10,39 +10,44 @@
       rel="stylesheet"
     />
   </head>
-  <body>   
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Recursos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
-                    </li>
-                </ul>
+  <body>  
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+      
+        <form class="w-25 bg-white p-4 rounded shadow needs-validation" novalidate>
+            <h2 class="text-center mb-4">Contato</h2>
+            
+          
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+                <div class="invalid-feedback">Por favor, insira um email válido.</div>
+                <div class="valid-feedback">Email válido.</div>
             </div>
-        </div>
-    </nav>
 
-   
-    <main class="container my-4">
-        <h1 class="text-center">Bem-vindo ao Documento Base</h1>
-        <p class="text-center">Este é um ponto de partida para o desenvolvimento de páginas com Bootstrap.</p>
-    </main>
+           
+            <div class="mb-3">
+                <label for="assunto" class="form-label">Assunto</label>
+                <input type="text" class="form-control" id="assunto" placeholder="Digite o assunto" required>
+                <div class="invalid-feedback">Por favor, preencha o campo assunto.</div>
+                <div class="valid-feedback">Assunto válido.</div>
+            </div>
 
-  
-    <footer class="bg-light text-center py-3">
-        <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
-    </footer>
+         
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite sua mensagem" required></textarea>
+                <div class="invalid-feedback">Por favor, insira uma mensagem.</div>
+                <div class="valid-feedback">Mensagem válida.</div>
+            </div>
+
+        
+            <div class="d-flex justify-content-between">
+                <button type="submit" class="btn btn-primary px-4">Enviar</button>
+                <button type="reset" class="btn btn-secondary px-4">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    
     <script src="js/script.js"></script>
 
     <script
